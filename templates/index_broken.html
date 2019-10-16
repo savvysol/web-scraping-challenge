@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center" style="background-image: url({{main_image}}); background-size: 100%">
+      <h1>Mike's Mission to Mars</h1>
+      <p>
+      <a class="btn btn-primary btn-lg" href="/scrape" role="button">Get ALL New Mars Data!</a>
+      <a class="btn btn-primary btn-lg" href="/image" role="button">Get New Mars Image</a>
+      <a class="btn btn-primary btn-lg" href="/image" role="button">Get New Mars Image</a>
+      <a class="btn btn-primary btn-lg" href="/image" role="button">Get New Mars Image</a>
+    </p>
+    </div>
+    <!-- <h2>Latest Mars News:</h2> -->
+    <h3>{{ news_title }}</h3>
+    <p>{{ news_teaser }}</p>
+    <img src="{{ main_image }}" alt="Mars">
+    <h2>The Current Weather on Mars:</h2>
+    <h3>Weather Pulled on {{weather_timestamp>}}</h3>
+    <p>{{ weather }}</p>
+    <p>{{ facts_table }}</p>
+  </div>
+  </div>
+</body>
+
+</html>
